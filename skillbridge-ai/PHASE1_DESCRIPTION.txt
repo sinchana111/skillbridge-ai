@@ -1,6 +1,0 @@
-Project: SkillBridge AI — Explainable Resume Analyzer & Career Gap Navigator
-Official challenge: PS-04 — AI Resume Analyzer
-
-SkillBridge AI helps students understand how clearly their resumes demonstrate the skills required for a target role. Users can upload a text-based PDF or paste resume text, compare it with a job description, review extracted skills and missing requirements, inspect a best-effort privacy-masked preview, and simulate how acquiring specific skills would change the transparent skill-coverage score. A directed competency graph suggests learning dependencies. Optional MiniLM embeddings provide a separate semantic similarity indicator. This is an explainable prototype, not a hiring prediction or an official ATS score.
-
-Technology: Python, Streamlit, PyMuPDF, NetworkX, Plotly; optional Sentence Transformers.
