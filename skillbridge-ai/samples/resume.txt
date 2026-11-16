@@ -1,0 +1,8 @@
+EDUCATION
+BTech in Artificial Intelligence and Machine Learning
+SKILLS
+Python, SQL, Machine Learning, Pandas, NumPy, Git
+PROJECTS
+Built a Python dashboard to analyze 1200 synthetic records using Pandas and SQL.
+EXPERIENCE
+Student project contributor
