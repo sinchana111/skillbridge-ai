@@ -54,7 +54,7 @@ with input_tab:
             st.caption('Emails, phone-like strings and URLs are masked. Names and other identifiers may remain; review before sharing.')
     if st.button('✨ Analyze resume', type='primary', use_container_width=True):
         try:
-            st.session_state['report'] = analyze_hybrid(resume, job, use_semantic=semantic)
+            st.session_state['report'] = analyze_hybrid(resume, job, st.session_state['report'] = analyze_hybrid(resume, job, use_semantic=False))
             st.success('Analysis ready! Open the Explainable Match and Upskilling Simulator tabs.')
         except ValueError as exc:
             st.error(str(exc))
