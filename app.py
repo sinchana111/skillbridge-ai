@@ -54,7 +54,7 @@ with input_tab:
             st.caption('Emails, phone-like strings and URLs are masked. Names and other identifiers may remain; review before sharing.')
     if st.button('✨ Analyze resume', type='primary', use_container_width=True):
         try:
-            st.session_state['report'] = analyze_hybrid(resume, job, st.session_state['report'] = analyze_hybrid(resume, job, use_semantic=False))
+            st.session_state['report'] = analyze_hybrid(resume, job, use_semantic=False)
             st.success('Analysis ready! Open the Explainable Match and Upskilling Simulator tabs.')
         except ValueError as exc:
             st.error(str(exc))
@@ -126,4 +126,3 @@ with future_tab:
         if selected:
             st.markdown('#### Suggested portfolio challenge')
             st.write('Build one small project that genuinely demonstrates ' + ', '.join(selected) + '. Document your implementation, tests and measured outcomes before claiming these skills on a resume.')
-        st.caption('Dependency edges are educational suggestions, not universal prerequisites. Skill coverage remains the scored metric; optional MiniLM similarity is displayed separately when enabled.')
